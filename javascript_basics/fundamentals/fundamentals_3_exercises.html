@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    function addSeven(a) {
+        return a + 7;
+    }
+
+    function multipleyTwoNumbers(a, b) {
+        return a * b;
+    }
+    
+    function capitalizeString(phrase) {
+        let lowerPhrase = phrase.toLowerCase();
+        let words = lowerPhrase.split(" ");
+        let capWord = words[0] = words[0][0].toUpperCase() + words[0].substr(1);
+        words[0] = capWord;
+        return words.join(" ");
+    }
+
+    function lastLetter(string) {
+        let splitString = string.split("");
+        let lastChar = splitString.slice(-1);
+        return lastChar
+    }
+
+    const a = 5;
+    const b = 3;
+    const phrase = "the oDin pRoJect IS fUN";
+    const string = "Hello, I'm Josh";
+
+    console.log(addSeven(a));
+    console.log(multipleyTwoNumbers(a, b));
+    console.log(capitalizeString(phrase));
+    console.log(lastLetter(string));
+  </script>
+</body>
+</html>
