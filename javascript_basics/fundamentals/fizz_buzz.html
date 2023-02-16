@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <p id="three"></p>
+  <script type="text/javascript">
+    // FizzBuzz in js from The Odin Project javascript fundamentals
+    // Wrote script instead of working alongside the lesson
+    // After reviewing lesson, realized that the `else if` conditionals don't need both comparisons
+    // since modulus of 3 and 5 is evaluated first in `if`.
+    // Leaving as written for my own learning.
+
+    let userNumber = parseInt(prompt("Please enter the max number for the program to count to: "));
+
+    function fizzBuzz(userNumber) {
+        for (let i = 1; i <= userNumber; i++) {
+            if (i % 5 === 0 && i % 3 === 0) {
+                console.log("FizzBuzz");
+            } else if (i % 3 === 0 && i % 5 != 0) { 
+                console.log("Fizz");
+            } else if (i % 5 === 0 && i % 3 != 0) {
+                console.log("Buzz");
+            } else {
+                console.log(i);
+            }
+        }
+    }
+
+    fizzBuzz(userNumber)
+  </script>
+</body>
+</html>
