@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="background-image"></div>
+    <div class="right-panel">
+      <div class="section-third" id="top-third">
+        <div class="header-text">Want to earn the Green Beret?</div> 
+      </div>
+      <div class="section-third" id="middle-third">
+        <form>
+          <fieldset>
+            <legend>Contact a Green Beret now</legend>
+            <div class="input-wrapper">
+              <label for="first_name">First Name:</label><br>
+              <input type="text" id="first_name" name="first_name" required><br>
+            </div>
+            <div class="input-wrapper">
+              <label for="last_name">Last Name:</label><br>
+              <input type="text" id="last_name" name="last_name" required><br>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">Email:</label><br>
+              <input type="email" id="email" name="email" required><br>
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Phone Number:</label><br>
+              <input type="tel" id="phone" name="phone"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required placeholder="Format: 123-456-7890"><br>
+            </div>
+            <div class="input-wrapper-submit" id="submit">
+              <input id="submit" type="submit" value="Submit">
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="section-third" id="bottom-third">
+        <div class="footer-text">Good Luck.</div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
