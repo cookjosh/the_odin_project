@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 50px .7fr minmax(8fr, 8.5fr);
+}
+
+.container div {
+  padding: 10px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #a2a8d3;
+  grid-area: 1 / 2 / 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.menu ul,
+.menu li {
+  font-size: 16px;
+  
+}
+
+.sidebar-left {
+  background-color: #38598b;
+  grid-area: 1 / 1 / 4 / 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 100px);
+}
+
+.sidebar-left .photo {
+  color: white;
+  font-size: 2rem;
+  font-weight: normal;
+  display: grid;
+  align-content: center;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+
+.sidebar-left .main-content {
+  color: white;
+  grid-area: 2 / 1 / 6 / 2;
+  justify-items: start;
+}
+
+.sidebar-left .setting-content {
+  color: white;
+  grid-area: 9 / 1 / 11 / 2;
+  justify-items: start;
+}
+
+.sidebar-left .main-item .setting-item {
+  color: white;
+  font-size: 25px;
+  font-weight: normal;
+  align-content: center;
+  padding: 5px;
+}
+
+.icon {
+  padding-right: 5px;
+  color: white;
+}
+
+.nav {
+  background-color: #a2a8d3;
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+.nav ul li {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.article {
+  background-color: #bccbde;
+  grid-area: 3 / 2 / 4 / 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+  height: 200px;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+
+.sidebar-right {
+  background-color: #393f4d;
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.footer p {
+  font-size: 13px;
+  font-weight: normal;  
+}
+
+
+/* Self Check:
+The container element has two columns - Done
+The container's second column is 4 times larger than the first column - Done
+The container element has a gap of 4px - Done
+The header element has two columns - Done
+The ul inside the menu element contains another grid - Done
+The ul inside the nav element contains another grid - Done
+The sidebar element has a gap of 50px - Done
+The text elements in the sidebar are centered with grid
+The article element should set grid columns using repeat along with the auto-fit and minmax properties
+The article columns should have a minimum value of 250px and a maximum of 1fr unit - Done
+The article element has a gap of 15px - Done
+The card elements inside the article container have a height of 200px - Done
+The header and footer span across both columns - Done
+The sidebar only spans across the first column - Done
+The nav and article elements only span across the second column - Done
+*/
